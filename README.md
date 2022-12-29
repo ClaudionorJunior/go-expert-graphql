@@ -4,16 +4,16 @@ Esse projeto faz parte do curso Go Expert da [FullCycle](https://fullcycle.com.b
 <br><br>
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ClaudionorJunior/go-expert-graphql">
 
+# Rodando o projeto:
+```sh
+cd cmd/server && go run main.go
+```
+
 # Configurando o DB:
 ```sh
 cd cmd/server && sqlite3 data.db
 create table categories (id string, name string, description string);
 create table courses (id string, name string, description string, category_id string);
-```
-
-# Rodando o projeto:
-```sh
-cd cmd/server && go run main.go
 ```
 
 # Atualizando GraphQL
